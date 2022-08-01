@@ -2,11 +2,11 @@
 
 This project was generated using [Nx](https://nx.dev).
 
-Key elements:[Typescript](https://www.typescriptlang.org/), [RadixUi](https://www.radix-ui.com/), [Storybook](https://storybook.js.org/) [styled-components](https://styled-components.com/)
-
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
 🔎 **Smart, Fast and Extensible Build System**
+
+Key elements:[Typescript](https://www.typescriptlang.org/), [RadixUi](https://www.radix-ui.com/), [Storybook](https://storybook.js.org/), [styled-components](https://styled-components.com/)
 
 ## Adding capabilities to your workspace
 
