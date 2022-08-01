@@ -1,8 +1,8 @@
-
-
 # Happymonorepo
 
 This project was generated using [Nx](https://nx.dev).
+
+Key elements:[Typescript](https://www.typescriptlang.org/), [RadixUi](https://www.radix-ui.com/), [Storybook](https://storybook.js.org/) [styled-components](https://styled-components.com/)
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
@@ -53,7 +53,8 @@ Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The 
 
 ## Code scaffolding
 
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
+Run `nx g @nrwl/react:component my-component --project=ui` to generate a new component.
+Run `nx g @nrwl/react:stories --project=ui` to generate stories for the components.
 
 ## Build
 
@@ -78,8 +79,6 @@ Run `nx graph` to see a diagram of the dependencies of your projects.
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
 
 ## ☁ Nx Cloud
 
