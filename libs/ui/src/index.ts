@@ -2,4 +2,5 @@
 
 export * from '@ui/components/accordion';
 export * from '@ui/components/alert';
+export * from '@ui/components/avatar';
 export * from '@ui/components/button';
