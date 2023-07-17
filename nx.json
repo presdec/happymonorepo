@@ -1,5 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+<<<<<<< HEAD
   "npmScope": "happymonorepo",
   "affected": {
     "defaultBase": "master"
@@ -14,19 +15,35 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
+=======
+  "affected": {
+    "defaultBase": "master"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx-cloud",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "options": {
         "cacheableOperations": [
           "build",
           "lint",
           "test",
+<<<<<<< HEAD
           "e2e"
         ],
         "accessToken": "ZGE3NzE2NzYtMjc4NS00NGZhLWJjODYtZDJiM2M1Y2E3MTU1fHJlYWQtd3JpdGU="
+=======
+          "e2e",
+          "build-storybook"
+        ],
+        "accessToken": "YjA5YWZmNTYtOWI2ZS00MjZmLWExZTEtMGViNDJmYzgxODFkfHJlYWQtd3JpdGU="
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       }
     }
   },
   "targetDefaults": {
     "build": {
+<<<<<<< HEAD
       "dependsOn": [
         "^build"
       ]
@@ -49,4 +66,53 @@
     }
   },
   "defaultProject": "features-lib"
+=======
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
+    },
+    "test": {
+      "inputs": ["default", "^production", "{workspaceRoot}/jest.preset.js"]
+    },
+    "e2e": {
+      "inputs": ["default", "^production"]
+    },
+    "lint": {
+      "inputs": [
+        "default",
+        "{workspaceRoot}/.eslintrc.json",
+        "{workspaceRoot}/.eslintignore"
+      ]
+    },
+    "build-storybook": {
+      "inputs": ["default", "^production", "!{projectRoot}/.storybook/**/*"]
+    }
+  },
+  "namedInputs": {
+    "default": ["{projectRoot}/**/*", "sharedGlobals"],
+    "production": [
+      "default",
+      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+      "!{projectRoot}/tsconfig.spec.json",
+      "!{projectRoot}/jest.config.[jt]s",
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/**/*.stories.@(js|jsx|ts|tsx|mdx)",
+      "!{projectRoot}/.storybook/**/*"
+    ],
+    "sharedGlobals": []
+  },
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true
+      },
+      "library": {}
+    },
+    "@nx/next": {
+      "application": {
+        "style": "css",
+        "linter": "eslint"
+      }
+    }
+  }
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
 }

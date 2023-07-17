@@ -1,16 +1,25 @@
 {
+<<<<<<< HEAD
+=======
+  "name": "ui",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/ui/src",
   "projectType": "library",
   "tags": [],
   "targets": {
     "lint": {
+<<<<<<< HEAD
       "executor": "@nrwl/linter:eslint",
+=======
+      "executor": "@nx/linter:eslint",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["libs/ui/**/*.{ts,tsx,js,jsx}"]
       }
     },
+<<<<<<< HEAD
     "test": {
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/libs/ui"],
@@ -27,6 +36,13 @@
         "config": {
           "configFolder": "libs/ui/.storybook"
         }
+=======
+    "storybook": {
+      "executor": "@nx/storybook:storybook",
+      "options": {
+        "port": 4400,
+        "configDir": "libs/ui/.storybook"
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       },
       "configurations": {
         "ci": {
@@ -35,6 +51,7 @@
       }
     },
     "build-storybook": {
+<<<<<<< HEAD
       "executor": "@nrwl/storybook:build",
       "outputs": ["{options.outputPath}"],
       "options": {
@@ -43,12 +60,40 @@
         "config": {
           "configFolder": "libs/ui/.storybook"
         }
+=======
+      "executor": "@nx/storybook:build",
+      "outputs": ["{options.outputDir}"],
+      "options": {
+        "outputDir": "dist/storybook/ui",
+        "configDir": "libs/ui/.storybook"
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       },
       "configurations": {
         "ci": {
           "quiet": true
         }
       }
+<<<<<<< HEAD
+=======
+    },
+    "test-storybook": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "test-storybook -c libs/ui/.storybook --url=http://localhost:4400"
+      }
+    },
+    "static-storybook": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "ui:build-storybook",
+        "staticFilePath": "dist/storybook/ui"
+      },
+      "configurations": {
+        "ci": {
+          "buildTarget": "ui:build-storybook:ci"
+        }
+      }
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
     }
   }
 }

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -11,6 +12,18 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
+=======
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "allowJs": false,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ui/*": ["../ui/src/index.ts"]
+    }
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   },
   "files": [],
   "include": [],
@@ -19,10 +32,17 @@
       "path": "./tsconfig.lib.json"
     },
     {
+<<<<<<< HEAD
       "path": "./tsconfig.spec.json"
     },
     {
       "path": "./.storybook/tsconfig.json"
     }
   ]
+=======
+      "path": "./.storybook/tsconfig.json"
+    }
+  ],
+  "extends": "../../tsconfig.base.json"
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
 }

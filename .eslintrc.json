@@ -1,12 +1,20 @@
 {
   "root": true,
   "ignorePatterns": ["**/*"],
+<<<<<<< HEAD
   "plugins": ["@nrwl/nx"],
+=======
+  "plugins": ["@nx"],
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
+<<<<<<< HEAD
         "@nrwl/nx/enforce-module-boundaries": [
+=======
+        "@nx/enforce-module-boundaries": [
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
           "error",
           {
             "enforceBuildableLibDependency": true,
@@ -23,12 +31,20 @@
     },
     {
       "files": ["*.ts", "*.tsx"],
+<<<<<<< HEAD
       "extends": ["plugin:@nrwl/nx/typescript"],
+=======
+      "extends": ["plugin:@nx/typescript"],
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "rules": {}
     },
     {
       "files": ["*.js", "*.jsx"],
+<<<<<<< HEAD
       "extends": ["plugin:@nrwl/nx/javascript"],
+=======
+      "extends": ["plugin:@nx/javascript"],
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "rules": {}
     }
   ]

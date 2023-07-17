@@ -5,11 +5,18 @@
     "outDir": ""
   },
   "files": [
+<<<<<<< HEAD
     "../../../node_modules/@nrwl/react/typings/styled-jsx.d.ts",
     "../../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
     "../../../node_modules/@nrwl/react/typings/image.d.ts"
   ],
 
+=======
+    "../../../node_modules/@nx/react/typings/styled-jsx.d.ts",
+    "../../../node_modules/@nx/react/typings/cssmodule.d.ts",
+    "../../../node_modules/@nx/react/typings/image.d.ts"
+  ],
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   "exclude": [
     "../**/*.spec.ts",
     "../**/*.spec.js",
@@ -22,6 +29,12 @@
     "../src/**/*.stories.jsx",
     "../src/**/*.stories.tsx",
     "../src/**/*.stories.mdx",
+<<<<<<< HEAD
     "*.js"
+=======
+    "*.ts",
+    "*.js",
+    "../src/styles/*.css"
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   ]
 }

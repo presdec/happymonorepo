@@ -1,10 +1,18 @@
 {
+<<<<<<< HEAD
+=======
+  "name": "ui-e2e",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/ui-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
+<<<<<<< HEAD
       "executor": "@nrwl/cypress:cypress",
+=======
+      "executor": "@nx/cypress:cypress",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "options": {
         "cypressConfig": "apps/ui-e2e/cypress.config.ts",
         "devServerTarget": "ui:storybook",
@@ -12,12 +20,20 @@
       },
       "configurations": {
         "ci": {
+<<<<<<< HEAD
           "devServerTarget": "ui:storybook:ci"
+=======
+          "devServerTarget": "ui:static-storybook:ci"
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
         }
       }
     },
     "lint": {
+<<<<<<< HEAD
       "executor": "@nrwl/linter:eslint",
+=======
+      "executor": "@nx/linter:eslint",
+>>>>>>> aed6ee2d2def0ac265f6d7a9d56f0d482d769200
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/ui-e2e/**/*.{js,ts}"]
