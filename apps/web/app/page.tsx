@@ -1,10 +1,33 @@
-import { Button } from '@nxmonorepo-shadcn-ui/ui';
+"use client"
+
+import {
+  Button,
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@my-project/ui-components';
+import { MeButton } from './MeButton';
 
 export default async function Index() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen space-y-4">
-      <h1 className="text-3xl font-bold underline">Web</h1>
-      <Button variant="outline">Hello World!</Button>
+    <div className="min-h-screen bg-muted flex justify-center items-center flex-col gap-2">
+      <MeButton />
+      <DropdownMenu>
+        <DropdownMenuTrigger>
+          <Button variant="outline">Open Menu</Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent>
+          <DropdownMenuLabel>My Account</DropdownMenuLabel>
+          <DropdownMenuSeparator />
+          <DropdownMenuItem>Profile</DropdownMenuItem>
+          <DropdownMenuItem>Billing</DropdownMenuItem>
+          <DropdownMenuItem>Team</DropdownMenuItem>
+          <DropdownMenuItem>Subscription</DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </div>
   );
 }

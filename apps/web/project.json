@@ -9,6 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
+        "postcssConfig": "apps/web/postcss.config.js",
         "outputPath": "dist/apps/web"
       },
       "configurations": {
@@ -22,8 +23,6 @@
       "executor": "@nx/next:server",
       "defaultConfiguration": "development",
       "options": {
-        "port": 3002,
-        "hostname": "0.0.0.0",
         "buildTarget": "web:build",
         "dev": true
       },

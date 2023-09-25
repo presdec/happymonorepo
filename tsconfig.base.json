@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nxmonorepo-shadcn-ui/ui": ["libs/ui/src/index.ts"],
-      "@nxmonorepo-shadcn-ui/ui/server": ["libs/ui/src/server.ts"]
+      "@my-project/ui-components": ["libs/ui-components/src/index.ts"],
+      "@my-project/ui-components/server": ["libs/ui-components/src/server.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

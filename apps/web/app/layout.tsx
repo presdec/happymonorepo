@@ -1,4 +1,4 @@
-import '@ui/styles/globals.css';
+import './global.css';
 
 export const metadata = {
   title: 'Welcome to web',
