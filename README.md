@@ -1,6 +1,3 @@
-# Link to YouTube tutorial:
-https://www.youtube.com/watch?v=Wosa6VrZPW0&lc=Ugz6DhvTIp-TfYZXzVJ4AaABAg
-
 # 1. Init Nx monorepo with NextJS
 
 `npx create-nx-workspace@latest`
